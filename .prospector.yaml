@@ -1,0 +1,14 @@
+# Valid values are "verylow", "low", "medium" (the default), "high" and "veryhigh"
+strictness: veryhigh
+
+pycodestyle:
+  disable:
+    - E203
+  options:
+    max-line-length: 120
+
+uses:
+  - django
+
+ignore-paths:
+  - static/

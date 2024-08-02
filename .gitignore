@@ -1,0 +1,18 @@
+# ignore all folders and files outside this folders
+*/*
+!src/*
+
+# inside non-ignored folders, ignore this folders and file extensions
+*.idea/
+*.backup/
+*.isorted
+*.log
+*.pyc
+*.session
+*.sql*
+*.xml
+.coverage
+.env*
+
+# don't ignore these files
+!.env.example

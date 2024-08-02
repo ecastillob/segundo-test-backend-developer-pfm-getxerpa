@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "segundo-test-backend-developer-pfm-getxerpa"
+version = "0.1.0"
+description = "Enriquecer transacciones en línea"
+authors = ["Erick Castillo <ecastillo.ecb@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = ">3.10, <3.13"
+Django = ">4.2, <5"
+djangorestframework = "^3.15.2"
+django-cors-headers = "^4.4.0"
+drf-spectacular = {extras = ["sidecar"], version = "^0.27.2"}
+python-decouple = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+# formatters
+isort = "^5.13.2"
+black = "^24.4.2"
+# flake8 linters
+flake8 = "<6"
+flake8-bugbear = "<24"
+flake8-comprehensions = "^3.15.0"
+mccabe = "^0.7.0"
+# pylint linters
+pylint = "<3"
+pylint-django = "<2.5.4"
+pylint-plugin-utils = "<0.8"
+prospector = "^1.10.3"
+# spelling
+codespell = "^2.3.0"
+# security linters
+bandit = "^1.7.9"
+safety = "<3"
+# precommit
+pre-commit = "^3.8.0"
+# coverage
+coverage = "^7.6.0"
+# interactive shell
+ipython = "^8.26.0"
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+combine_as_imports = true
+line_length = 120
+skip_glob = "*/migrations/*.py"
+
+
+[tool.black]
+line-length = 120
+target-version = ["py310", "py311", "py312"]
+
+
+[tool.bandit]
+targets = "./src"
+recursive = true
+
+
+[tool.codespell]
+skip = ["*.md", "*.toml"]
+count = ''
+quiet-level = 3
+ignore-words-list = "ilegal"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
