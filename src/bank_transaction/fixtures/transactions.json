@@ -1,0 +1,550 @@
+[
+    {
+        "input": {
+            "transactions": [
+                {
+                    "description": "PETROBRAS 11 ORTE/7 SU",
+                    "amount": -893.4,
+                    "date": "2024-07-03"
+                },
+                {
+                    "description": "PETROBRAS 9 NTE/7 ORNTE",
+                    "amount": 574.6,
+                    "date": "2024-07-09"
+                },
+                {
+                    "description": "PETROBRAS AEROPUERTO",
+                    "amount": -780.0,
+                    "date": "2024-07-13"
+                },
+                {
+                    "description": "PETROBRAS ALTO HOSPIC",
+                    "amount": 98.8,
+                    "date": "2024-07-11"
+                },
+                {
+                    "description": "PEDIDOSYA 3D RESTAURANT",
+                    "amount": -303.0,
+                    "date": "2024-07-06"
+                },
+                {
+                    "description": "PEDIDOSYA 3D SUPERMERC",
+                    "amount": -724.5,
+                    "date": "2024-07-18"
+                },
+                {
+                    "description": "PEDIDOSYA INDUMENT RIDERS",
+                    "amount": -317.3,
+                    "date": "2024-07-06"
+                },
+                {
+                    "description": "PEDIDOSYA MARKETS 9262",
+                    "amount": -997.6,
+                    "date": "2024-07-25"
+                },
+                {
+                    "description": "PEDIDOSYA PROPINA",
+                    "amount": -821.9,
+                    "date": "2024-07-13"
+                },
+                {
+                    "description": "McDonalds Las Condes",
+                    "amount": -857.0,
+                    "date": "2024-07-11"
+                },
+                {
+                    "description": "FACEBK 85ENTJXAQ2",
+                    "amount": 499.7,
+                    "date": "2024-07-04"
+                },
+                {
+                    "description": "FACEBK 85GSQFKH92",
+                    "amount": 854.0,
+                    "date": "2024-07-03"
+                },
+                {
+                    "description": "FACEBK 85R97HKYG2",
+                    "amount": 366.2,
+                    "date": "2024-07-05"
+                },
+                {
+                    "description": "SumUp *DOMINOS PIZZA G",
+                    "amount": 618.0,
+                    "date": "2024-07-10"
+                },
+                {
+                    "description": "PAYPAL *DOMINOS",
+                    "amount": 866.6,
+                    "date": "2024-07-19"
+                },
+                {
+                    "description": "DOMINO S PIZZA",
+                    "amount": -24.4,
+                    "date": "2024-07-16"
+                },
+                {
+                    "description": "Domino s Pizza Frederi",
+                    "amount": 715.0,
+                    "date": "2024-07-25"
+                },
+                {
+                    "description": "DOMINO S PIZZA LA 10",
+                    "amount": -376.5,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "DOMINO SANTA ROSA",
+                    "amount": 641.7,
+                    "date": "2024-07-07"
+                },
+                {
+                    "description": "DOMINO'S 2080",
+                    "amount": 681.9,
+                    "date": "2024-07-21"
+                },
+                {
+                    "description": "DOMINO'S 2759",
+                    "amount": 79.9,
+                    "date": "2024-07-26"
+                },
+                {
+                    "description": "DOMINO'S 3232",
+                    "amount": 967.5,
+                    "date": "2024-07-01"
+                },
+                {
+                    "description": "DOMINO'S 3684",
+                    "amount": -185.1,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "DOMINO'S 4342",
+                    "amount": -111.1,
+                    "date": "2024-07-18"
+                },
+                {
+                    "description": "SALCOBRAND 433 JUMBO C",
+                    "amount": 307.1,
+                    "date": "2024-07-20"
+                },
+                {
+                    "description": "SALCOBRAND 433 JUMBO CALA",
+                    "amount": 822.7,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "CRUZVERDE CV 9059",
+                    "amount": 369.6,
+                    "date": "2024-07-12"
+                },
+                {
+                    "description": "CRUZVERDE CV 9060",
+                    "amount": 44.0,
+                    "date": "2024-07-28"
+                },
+                {
+                    "description": "CRUZVERDE CV 9061",
+                    "amount": 544.1,
+                    "date": "2024-07-06"
+                },
+                {
+                    "description": "CRUZVERDE CV9081",
+                    "amount": 486.1,
+                    "date": "2024-07-16"
+                },
+                {
+                    "description": "CRUZVERDE CV9087",
+                    "amount": 347.4,
+                    "date": "2024-07-06"
+                },
+                {
+                    "description": "C. VERDE JUMBO RANCAGUA",
+                    "amount": -315.5,
+                    "date": "2024-07-18"
+                },
+                {
+                    "description": "C. VERDE JUMBO V DEL M",
+                    "amount": -199.1,
+                    "date": "2024-07-24"
+                },
+                {
+                    "description": "C. VERDE JUMBO V DEL MAR",
+                    "amount": -65.6,
+                    "date": "2024-07-19"
+                },
+                {
+                    "description": "merpago aguasandinas",
+                    "amount": 594.5,
+                    "date": "2024-07-01"
+                },
+                {
+                    "description": "UNIRED CL AGUAS ANDINAS",
+                    "amount": -613.9,
+                    "date": "2024-07-03"
+                },
+                {
+                    "description": "AGUAS ANDINAS",
+                    "amount": 703.1,
+                    "date": "2024-07-12"
+                },
+                {
+                    "description": "AGUAS ANDINAS ONEPAY",
+                    "amount": -974.5,
+                    "date": "2024-07-08"
+                },
+                {
+                    "description": "MCB 02 AGUAS ANDINAS",
+                    "amount": -170.8,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "COMPRA NACIONAL EASY LA DEHESA",
+                    "amount": 482.0,
+                    "date": "2024-07-21"
+                },
+                {
+                    "description": "Compra Nacional EASY RANCAGUA",
+                    "amount": -411.7,
+                    "date": "2024-07-25"
+                },
+                {
+                    "description": "EASY ALTO LAS CONDE",
+                    "amount": 290.3,
+                    "date": "2024-07-18"
+                },
+                {
+                    "description": "EASY ALTO LAS CONDES",
+                    "amount": -10.2,
+                    "date": "2024-07-05"
+                },
+                {
+                    "description": "EASY ANTOFAGASTA",
+                    "amount": 98.7,
+                    "date": "2024-07-13"
+                },
+                {
+                    "description": "EASY CALAMA",
+                    "amount": 539.7,
+                    "date": "2024-07-02"
+                },
+                {
+                    "description": "EASY CERRILLOS",
+                    "amount": -980.2,
+                    "date": "2024-07-15"
+                },
+                {
+                    "description": "EASY CHIGUAYANTE",
+                    "amount": -605.0,
+                    "date": "2024-07-09"
+                },
+                {
+                    "description": "EASY CHILLAN",
+                    "amount": 636.5,
+                    "date": "2024-07-22"
+                },
+                {
+                    "description": "EASY CONCHA Y TORO",
+                    "amount": -444.6,
+                    "date": "2024-07-21"
+                },
+                {
+                    "description": "EASY CONCHA Y TORO",
+                    "amount": -140.0,
+                    "date": "2024-07-04"
+                },
+                {
+                    "description": "EXPRESS - LIDER",
+                    "amount": 264.1,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "EXPRESS - LIDER CONCE",
+                    "amount": -273.1,
+                    "date": "2024-07-03"
+                },
+                {
+                    "description": "EXPRESS - LIDER CONCE TRE",
+                    "amount": -113.0,
+                    "date": "2024-07-26"
+                },
+                {
+                    "description": "EXPRESS ALGARROBO",
+                    "amount": 97.6,
+                    "date": "2024-07-03"
+                },
+                {
+                    "description": "EXPRESS ANDINO",
+                    "amount": 119.1,
+                    "date": "2024-07-13"
+                },
+                {
+                    "description": "EXPRESS ANDRNS MELLADO",
+                    "amount": -941.5,
+                    "date": "2024-07-09"
+                },
+                {
+                    "description": "EXPRESS ANGELINO",
+                    "amount": 957.7,
+                    "date": "2024-07-02"
+                },
+                {
+                    "description": "EXPRESS ANTOFAG PEREZ",
+                    "amount": 537.8,
+                    "date": "2024-07-11"
+                },
+                {
+                    "description": "EXPRESS BUIN SAN MARTIN",
+                    "amount": -152.5,
+                    "date": "2024-07-01"
+                },
+                {
+                    "description": "EXPRESS BUIN SAN MARTIN",
+                    "amount": 308.1,
+                    "date": "2024-07-06"
+                },
+                {
+                    "description": "EXPRESS CIUD DE LOS VA",
+                    "amount": 810.6,
+                    "date": "2024-07-03"
+                },
+                {
+                    "description": "EXPRESS CIUD DE LOS VALLE",
+                    "amount": 469.1,
+                    "date": "2024-07-05"
+                },
+                {
+                    "description": "EXPRESS CIUDAD DE BARCELO",
+                    "amount": -238.1,
+                    "date": "2024-07-08"
+                },
+                {
+                    "description": "EXPRESS CIUDAD DEL ES",
+                    "amount": 523.1,
+                    "date": "2024-07-27"
+                },
+                {
+                    "description": "MP *RECARGA BIP]",
+                    "amount": 800.1,
+                    "date": "2024-07-02"
+                },
+                {
+                    "description": "MP *RECARGA BIP|",
+                    "amount": 552.8,
+                    "date": "2024-07-13"
+                },
+                {
+                    "description": "BC UBER CASH",
+                    "amount": 100.4,
+                    "date": "2024-07-05"
+                },
+                {
+                    "description": "PAYPAL *UBER",
+                    "amount": 871.1,
+                    "date": "2024-07-25"
+                },
+                {
+                    "description": "PAYPAL *UBER BR",
+                    "amount": 875.4,
+                    "date": "2024-07-25"
+                },
+                {
+                    "description": "PAYPAL *UBER BV",
+                    "amount": 711.6,
+                    "date": "2024-07-12"
+                },
+                {
+                    "description": "PAYPAL *UBER BV",
+                    "amount": -741.8,
+                    "date": "2024-07-11"
+                },
+                {
+                    "description": "PAYPAL *UBERPAYMENT",
+                    "amount": 59.1,
+                    "date": "2024-07-21"
+                },
+                {
+                    "description": "PAYU *UBER TR",
+                    "amount": -659.9,
+                    "date": "2024-07-13"
+                },
+                {
+                    "description": "PAYU-UBER 828987",
+                    "amount": -115.0,
+                    "date": "2024-07-24"
+                },
+                {
+                    "description": "PAYPAL *UBER EATS",
+                    "amount": -722.7,
+                    "date": "2024-07-22"
+                },
+                {
+                    "description": "PAYPAL *UBERBV EATS",
+                    "amount": -958.5,
+                    "date": "2024-07-15"
+                },
+                {
+                    "description": "PAYPAL *UBEREATS AU",
+                    "amount": 783.1,
+                    "date": "2024-07-15"
+                },
+                {
+                    "description": "UBER *EATS HELP.UBER.C",
+                    "amount": -378.6,
+                    "date": "2024-07-26"
+                },
+                {
+                    "description": "UBER *EATS HELP.UBER.C",
+                    "amount": 585.0,
+                    "date": "2024-07-06"
+                },
+                {
+                    "description": "UBER *EATS HELP.UBER.COM",
+                    "amount": 68.5,
+                    "date": "2024-07-28"
+                },
+                {
+                    "description": "UBER CANADA/UBEREATS",
+                    "amount": 58.8,
+                    "date": "2024-07-18"
+                },
+                {
+                    "description": "UBER EATS",
+                    "amount": -719.5,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "UBER EATS",
+                    "amount": -786.8,
+                    "date": "2024-07-24"
+                },
+                {
+                    "description": "UBER* EATS",
+                    "amount": -245.3,
+                    "date": "2024-07-19"
+                },
+                {
+                    "description": "UBER* EATS",
+                    "amount": -304.1,
+                    "date": "2024-07-09"
+                },
+                {
+                    "description": "UNDER AMOUR MALL PLAZA VE",
+                    "amount": 904.8,
+                    "date": "2024-07-08"
+                },
+                {
+                    "description": "UNDER ARMOUR",
+                    "amount": -584.5,
+                    "date": "2024-07-09"
+                },
+                {
+                    "description": "UNDER ARMOUR CANCUN IC",
+                    "amount": -185.0,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "Pago TDC ITAU",
+                    "amount": -836.3,
+                    "date": "2024-07-17"
+                },
+                {
+                    "description": "Pago TDC ITAU",
+                    "amount": -592.0,
+                    "date": "2024-07-07"
+                },
+                {
+                    "description": "Pago TDC ITAU",
+                    "amount": -451.9,
+                    "date": "2024-07-08"
+                },
+                {
+                    "description": "Pago TDC ITAU",
+                    "amount": -826.9,
+                    "date": "2024-07-11"
+                },
+                {
+                    "description": "BOLT",
+                    "amount": -829.5,
+                    "date": "2024-07-18"
+                },
+                {
+                    "description": "UNIMARC - COORONEL",
+                    "amount": 101.2,
+                    "date": "2024-07-26"
+                },
+                {
+                    "description": "UNIMARC ANDALUE (CABRERO)",
+                    "amount": 915.8,
+                    "date": "2024-07-05"
+                },
+                {
+                    "description": "UNIMARC ANGOL I",
+                    "amount": 609.7,
+                    "date": "2024-07-16"
+                },
+                {
+                    "description": "UNIMARC ANTOFAGASTA",
+                    "amount": 496.6,
+                    "date": "2024-07-25"
+                },
+                {
+                    "description": "UNIMARC ARAUCO",
+                    "amount": -943.4,
+                    "date": "2024-07-23"
+                },
+                {
+                    "description": "UNIMARC ATACAMA",
+                    "amount": 705.9,
+                    "date": "2024-07-28"
+                },
+                {
+                    "description": "UNIMARC AV ESPANA",
+                    "amount": -5.5,
+                    "date": "2024-07-13"
+                },
+                {
+                    "description": "uber",
+                    "amount": -243.8,
+                    "date": "2024-07-22"
+                }
+            ]
+        },
+        "output": {
+            "categorization_rate": 2.97,
+            "merchant_rate": 3.96,
+            "total_transactions": 101
+        }
+    },
+    {
+        "input": {
+            "transactions": [
+                {
+                    "description": "ahorro",
+                    "amount": 875.29,
+                    "date": "2024-07-17"
+                }
+            ]
+        },
+        "output": {
+            "categorization_rate": 100.0,
+            "merchant_rate": 0.0,
+            "total_transactions": 1
+        }
+    },
+    {
+        "input": {
+            "transactions": [
+                {
+                    "description": "El ahorrador",
+                    "amount": 387.00,
+                    "date": "2024-07-24"
+                }
+            ]
+        },
+        "output": {
+            "categorization_rate": 100.0,
+            "merchant_rate": 100.0,
+            "total_transactions": 1
+        }
+    }
+]

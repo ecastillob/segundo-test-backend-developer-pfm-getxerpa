@@ -1,0 +1,63 @@
+fail_fast: true
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        files: \.py$
+        stages: [commit]
+        language: system
+        entry: isort src
+        types: [python]
+
+      - id: black
+        name: black
+        stages: [commit]
+        language: system
+        entry: black .
+        types: [python]
+
+      - id: flake8
+        name: flake8
+        stages: [commit]
+        language: system
+        entry: flake8
+        types: [python]
+
+      - id: pylint
+        name: pylint
+        stages: [commit]
+        language: system
+        entry: pylint --fail-under=9.99 src
+        types: [python]
+        pass_filenames: false
+
+      - id: prospector
+        name: prospector
+        stages: [commit]
+        language: system
+        entry: prospector --strictness veryhigh
+        types: [python]
+        pass_filenames: false
+
+      - id: codespell
+        name: codespell
+        stages: [commit]
+        language: system
+        entry: codespell
+        types: [python]
+
+      - id: bandit
+        name: bandit
+        stages: [commit]
+        language: system
+        entry: bandit -v -r . -c "pyproject.toml"
+        types: [python]
+        pass_filenames: false
+
+      - id: safety
+        name: safety
+        stages: [commit]
+        language: system
+        entry: poetry run safety check --full-report
+        pass_filenames: false

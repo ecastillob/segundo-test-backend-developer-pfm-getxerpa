@@ -1,0 +1,38 @@
+[
+    {
+        "input": {
+            "transactions": [
+                {
+                    "description": null,
+                    "amount": -893.4,
+                    "date": "2024-07-03"
+                }
+            ]
+        },
+        "output": {"error": {"transactions": [{"description": ["This field may not be null."]}]}}
+    },
+    {
+        "input": {
+            "transactions": [
+                {
+                    "description": "la desc",
+                    "amount": -893.4,
+                    "date": "2024-07-03-02"
+                }
+            ]
+        },
+        "output": {"error": {"transactions": [{"date": ["Date has wrong format. Use one of these formats instead: YYYY-MM-DD."]}]}}
+    },
+    {
+        "input": {
+            "transactions": [
+                {
+                    "description": "la desc",
+                    "amount": null,
+                    "date": "2024-07-03"
+                }
+            ]
+        },
+        "output": ["amount is invalid or empty"]
+    }
+]

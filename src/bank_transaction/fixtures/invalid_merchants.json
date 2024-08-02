@@ -1,0 +1,23 @@
+[
+    {
+        "id": "e6dff46f-6099-4109-b470-b8cc8fe1bf01",
+        "merchant_name": "Uber",
+        "merchant_logo": "https://media.wired.com/photos/592736e0f3e2356fd800bcae/master/w_1600%2Cc_limit/Uber_Logobit_Digital_black.jpg",
+        "category": "d3a36995-2900-4bf0-b1c3-8fc186b057c6"
+    },
+    {
+        "id": "e6dff46f-6099-4109-b470-b8cc8fe1bf01",
+        "merchant_logo": "https://media.wired.com/photos/592736e0f3e2356fd800bcae/master/w_1600%2Cc_limit/Uber_Logobit_Digital_black.jpg",
+        "category": "d3a36995-2900-4bf0-b1c3-8fc186b057c6"
+    },
+    {
+        "id": "e6dff46f-6099-4109-b470-b8cc8fe1bf01",
+        "merchant_name": "Uber",
+        "category": "d3a36995-2900-4bf0-b1c3-8fc186b057c6"
+    },
+    {
+        "id": "e6dff46f-6099-4109-b470-b8cc8fe1bf01",
+        "merchant_name": "Uber",
+        "category": "05623d81-478d-432b-a8a4-5a884a51eead"
+    }
+]
