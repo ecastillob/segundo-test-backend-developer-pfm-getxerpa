@@ -183,7 +183,7 @@ Sin embargo, **es muy importante que el archivo `.env` esté dentro de la misma 
 
 ## Uso de la API REST
 
-Se implementaron 4 endpoints, que son los crea guardan datos en la base de datos:
+Se implementaron 4 endpoints que guardan datos en la base de datos:
 - `POST /api/v1/category`: agrega una categoría
 	- ejemplo de cuerpo:
 	```json
@@ -244,6 +244,8 @@ Un ejemplo de invocación para por ejemplo, el endpoint que agrega categoría, c
     "type": "expense"
 }
 ```
+
+El resto de los endpoints para ver, editar y eliminar datos se pueden ver en la siguiente subsección
 
 ### Docs
 

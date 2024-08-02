@@ -18,7 +18,7 @@ class Merchant(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     merchant_name = models.CharField(max_length=100)
     merchant_logo = models.URLField(max_length=255, blank=True, null=True)
-    category = models.ForeignKey(Category, models.DO_NOTHING, blank=True, null=True)
+    category = models.ForeignKey(Category, models.CASCADE, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -29,7 +29,7 @@ class Merchant(models.Model):
 class Keyword(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     keyword = models.CharField(max_length=100)
-    merchant = models.ForeignKey(Merchant, models.DO_NOTHING)
+    merchant = models.ForeignKey(Merchant, models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -42,7 +42,7 @@ class Transaction(models.Model):
     description = models.CharField(max_length=255)
     amount = models.FloatField(blank=True, null=True)
     date = models.DateField(blank=True, null=True)
-    merchant = models.ForeignKey(Merchant, models.DO_NOTHING, blank=True, null=True)
-    category = models.ForeignKey(Category, models.DO_NOTHING, blank=True, null=True)
+    merchant = models.ForeignKey(Merchant, models.CASCADE, blank=True, null=True)
+    category = models.ForeignKey(Category, models.CASCADE, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
