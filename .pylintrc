@@ -1,0 +1,58 @@
+[MASTER]
+
+# Add files or directories to the blacklist. They should be base names, not paths.
+ignore=migrations
+
+# List of plugins (as comma separated values of python modules names) to load,
+# usually to register additional checkers.
+load-plugins=pylint_django
+
+# In order to access some of the internal Django features to improve pylint inspections
+# you should also provide a Django settings module appropriate to your project
+django-settings-module=src.settings
+
+
+
+[BASIC]
+
+# Good variable names which should always be accepted, separated by a comma.
+good-names=df, i
+
+
+
+[MESSAGES CONTROL]
+
+# Enable the message, report, category or checker with the given id(s). You can
+# either give multiple identifier separated by comma (,) or put this option
+# multiple time.
+#enable=
+
+# Disable the message, report, category or checker with the given id(s). You
+# can either give multiple identifier separated by comma (,) or put this option
+# multiple time (only on the command line, not in the configuration file where
+# it should appear only once).
+# C0114 : Missing module docstring (missing-module-docstring)
+# C0115 : Missing class docstring (missing-class-docstring)
+# C0116 : Missing function or method docstring (missing-function-docstring)
+# F0010 : error while code parsing: Unable to load file __init__.py (parse-error)
+# R0903 : Too few public methods (too-few-public-methods)
+# W0223 : Method %r is abstract in class %r but is not overridden in child class %r (abstract-method)
+# W0237 : Parameter 'a_parameter' has been renamed to 'another_parameter' in overriding 'Class.method' method (arguments-renamed)
+disable=C0114,C0115,C0116,F0010,R0903,W0223,W0237
+
+
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=120
+
+
+
+[DESIGN]
+
+# Maximum number of arguments for function / method.
+max-args=5
+
+# Minimum number of public methods for a class (see R0903).
+min-public-methods=1
