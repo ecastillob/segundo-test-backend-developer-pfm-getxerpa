@@ -8,6 +8,12 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = ["id", "name", "type"]
 
+    def __init__(self, *args, **kwargs):
+        edit = kwargs.pop("edit") if "edit" in kwargs else False
+        super().__init__(*args, **kwargs)
+        if edit:
+            self.fields.pop("id")
+
 
 class MerchantSerializer(serializers.ModelSerializer):
     class Meta:
@@ -16,10 +22,14 @@ class MerchantSerializer(serializers.ModelSerializer):
 
     def __init__(self, *args, **kwargs):
         self.category_id = None
+        edit = kwargs.pop("edit") if "edit" in kwargs else False
         data = kwargs.get("data", None)
         if data:
             self.category_id = data.get("category", None)
         super().__init__(*args, **kwargs)
+        if edit:
+            self.fields.pop("id")
+            self.fields.pop("merchant_name")
 
     def validate(self, data):
         if self.category_id:
@@ -37,6 +47,12 @@ class MerchantSerializer(serializers.ModelSerializer):
 class KeywordSerializer(serializers.ModelSerializer):
     class Meta:
         model = Keyword
+        exclude = []
+
+
+class TransactionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Transaction
         exclude = []
 
 
