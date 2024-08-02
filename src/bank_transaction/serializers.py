@@ -8,14 +8,6 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = ["id", "name", "type"]
 
-    def validate(self, data):
-        category_id = data.get("id", None)
-        if category_id and Category.objects.filter(id=category_id).exists():
-            raise serializers.ValidationError("Categoría ya existe.")
-        if Category.objects.filter(name=data["name"], type=data["type"]).exists():
-            raise serializers.ValidationError("Categoría ya existe.")
-        return data
-
 
 class MerchantSerializer(serializers.ModelSerializer):
     class Meta:
@@ -23,7 +15,10 @@ class MerchantSerializer(serializers.ModelSerializer):
         fields = ["id", "merchant_name", "merchant_logo"]
 
     def __init__(self, *args, **kwargs):
-        self.category_id = kwargs["data"].get("category", None)
+        self.category_id = None
+        data = kwargs.get("data", None)
+        if data:
+            self.category_id = data.get("category", None)
         super().__init__(*args, **kwargs)
 
     def validate(self, data):
@@ -45,34 +40,6 @@ class KeywordSerializer(serializers.ModelSerializer):
         exclude = []
 
 
-class TransactionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Transaction
-        exclude = ["merchant", "category"]
-
-    def create(self, validated_data):
-        validated_data.update({"merchant_id": None, "category_id": None})
-        description = validated_data["description"].lower()
-        keyword_queryset = Keyword.objects.filter(keyword__iexact=description)
-        if keyword_queryset:
-            keyword_instance = keyword_queryset[0]
-            validated_data.update(
-                {"merchant_id": keyword_instance.merchant_id, "category_id": keyword_instance.merchant.category_id}
-            )
-        else:
-            merchant_queryset = Merchant.objects.filter(merchant_name__iexact=description)
-            if merchant_queryset:
-                merchant = merchant_queryset[0]
-                validated_data.update({"merchant_id": merchant.id, "category_id": merchant.category_id})
-            else:
-                category_queryset = Category.objects.filter(name__iexact=description)
-                if category_queryset:
-                    validated_data.update({"category_id": category_queryset[0].id})
-        instance = Transaction.objects.create(**validated_data)
-        validated_data["id"] = instance.id
-        return validated_data
-
-
 class TransactionSimpleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transaction
@@ -91,6 +58,8 @@ class TransactionBulkSerializer(serializers.Serializer):
 
     def process_1_item(self, validated_data: dict) -> dict:
         category_id = None
+        if validated_data.get("amount", None) is None:
+            raise serializers.ValidationError("amount is invalid or empty")
         category_type = "expense" if validated_data["amount"] < 0 else "income"
         validated_data.update({"merchant_id": None, "category_id": category_id})
         description = validated_data["description"].lower()
@@ -136,5 +105,11 @@ class TransactionBulkSerializer(serializers.Serializer):
         return {
             "categorization_rate": round(100 * category_counter / total, 2),
             "merchant_rate": round(100 * merchant_counter / total, 2),
-            "total transactions": total,
+            "total_transactions": total,
         }
+
+
+class TransactionResponseSerializer(serializers.Serializer):
+    categorization_rate = serializers.FloatField()
+    merchant_rate = serializers.FloatField()
+    total_transactions = serializers.FloatField()

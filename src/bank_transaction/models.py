@@ -6,7 +6,7 @@ from django.db import models
 class Category(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     name = models.CharField(max_length=100)
-    type = models.CharField(max_length=100)
+    type = models.CharField(max_length=100, choices=(("expense", "expense"), ("income", "income")))
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -17,7 +17,7 @@ class Category(models.Model):
 class Merchant(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4)
     merchant_name = models.CharField(max_length=100)
-    merchant_logo = models.URLField(max_length=255, blank=True)
+    merchant_logo = models.URLField(max_length=255, blank=True, null=True)
     category = models.ForeignKey(Category, models.DO_NOTHING, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -1,0 +1,11 @@
+[run]
+branch = true
+omit =
+    */venv/*
+    */tests/*
+    ./backup/*
+    ./helpers/*
+    asgi.py
+    wsgi.py
+    *tests.py
+    *admin.py

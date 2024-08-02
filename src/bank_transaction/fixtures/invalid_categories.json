@@ -1,0 +1,102 @@
+[
+    {
+        "input": {
+            "id": "79a9e1d5-176d-41c2-a592-a745cb4302d4",
+            "name": "Un nombre valido pero id ya existente",
+            "type": "expense"
+        },
+        "output": {
+            "error": {
+                "id": [
+                    "category with this id already exists."
+                ]
+            }
+        }
+    },
+    {
+        "input": {
+            "id": "6f2bc843-99ca-4c18-9710-e82fab82f701",
+            "name": "Una categoria",
+            "type": "invalidtype"
+        },
+        "output": {
+            "error": {
+                "type": [
+                    "\"invalidtype\" is not a valid choice."
+                ]
+            }
+        }
+    },
+    {
+        "input": {
+            "name": "Una categoria",
+            "type": "invalidtype"
+        },
+        "output": {
+            "error": {
+                "type": [
+                    "\"invalidtype\" is not a valid choice."
+                ]
+            }
+        }
+    },
+    {
+        "input": {
+            "id": "6f2bc843-99ca-4c18-9710-e82fab82f701",
+            "type": "invalidtype"
+        },
+        "output": {
+            "error": {
+                "name": [
+                    "This field is required."
+                ],
+                "type": [
+                    "\"invalidtype\" is not a valid choice."
+                ]
+            }
+        }
+    },
+    {
+        "input": {
+            "type": "invalidtype"
+        },
+        "output": {
+            "error": {
+                "name": [
+                    "This field is required."
+                ],
+                "type": [
+                    "\"invalidtype\" is not a valid choice."
+                ]
+            }
+        }
+    },
+    {
+        "input": {
+            "id": "6f2bc843-99ca-4c18-9710-e82fab82f701"
+        },
+        "output": {
+            "error": {
+                "name": [
+                    "This field is required."
+                ],
+                "type": [
+                    "This field is required."
+                ]
+            }
+        }
+    },
+    {
+        "input": {
+            "name": "Entretenimiento & Recreación",
+            "type": "expense"
+        },
+        "output": {
+            "error": {
+                "non_field_errors": [
+                    "The fields name, type must make a unique set."
+                ]
+            }
+        }
+    }
+]
